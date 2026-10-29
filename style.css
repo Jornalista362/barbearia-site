@@ -1,0 +1,143 @@
+/* CONFIGURAÇÕES GERAIS */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #0b0b0b;
+    color: #fff;
+    font-family: Arial, sans-serif;
+}
+
+/* CABEÇALHO */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 8%;
+    background: #111;
+    border-bottom: 1px solid #b58b36;
+}
+
+header h2 {
+    color: #fff;
+    font-size: 22px;
+}
+
+header span {
+    color: #d4a63c;
+}
+
+nav {
+    display: flex;
+    gap: 25px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #d4a63c;
+}
+
+/* INÍCIO */
+
+.inicio {
+    min-height: 85vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+.inicio > p:first-child {
+    color: #d4a63c;
+    letter-spacing: 4px;
+    margin-bottom: 25px;
+}
+
+.inicio h1 {
+    font-size: clamp(38px, 7vw, 75px);
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.inicio h1 span {
+    color: #d4a63c;
+}
+
+.inicio > p {
+    color: #aaa;
+    font-size: 18px;
+    margin-bottom: 35px;
+}
+
+/* BOTÃO */
+
+.botao {
+    background: #d4a63c;
+    color: #111;
+    text-decoration: none;
+    padding: 16px 25px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.botao:hover {
+    background: #fff;
+}
+
+/* SEÇÕES */
+
+section:not(.inicio) {
+    padding: 80px 8%;
+    text-align: center;
+}
+
+section h2 {
+    color: #d4a63c;
+    font-size: 32px;
+    margin-bottom: 25px;
+}
+
+section p {
+    color: #ccc;
+    line-height: 1.7;
+}
+
+/* CELULARES */
+
+@media (max-width: 600px) {
+
+    header {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    nav {
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    nav a {
+        font-size: 14px;
+    }
+
+    .inicio {
+        min-height: 75vh;
+    }
+}
